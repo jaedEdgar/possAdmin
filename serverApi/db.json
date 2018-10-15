@@ -1,0 +1,390 @@
+{
+  "stock": [
+    {
+      "description": "ACARBOSA ",
+      "existence": 48,
+      "clave": "A00001010",
+      "price": 252
+    },
+    {
+      "description": "ACECLOFENACO",
+      "existence": 7,
+      "clave": "A00001011",
+      "price": 233
+    },
+    {
+      "description": "ACEMETACINAACENOCUMAROL",
+      "existence": 27,
+      "clave": "A00001012",
+      "price": 225
+    },
+    {
+      "description": "ACICLOVIR",
+      "existence": 46,
+      "clave": "A00001013",
+      "price": 289
+    },
+    {
+      "description": "AMBROXOL",
+      "existence": 16,
+      "clave": "A00001014",
+      "price": 301
+    },
+    {
+      "description": "AMISULPRIDA",
+      "existence": 14,
+      "clave": "A00001015",
+      "price": 312
+    },
+    {
+      "description": "ANASTROZOL",
+      "existence": 18,
+      "clave": "A00001016",
+      "price": 227
+    },
+    {
+      "description": "BEZAFIBRATO",
+      "existence": 36,
+      "clave": "A00001017",
+      "price": 286
+    },
+    {
+      "description": "BICALUTAMIDA",
+      "existence": 32,
+      "clave": "A00001018",
+      "price": 279
+    },
+    {
+      "description": "BIFONAZOL",
+      "existence": 4,
+      "clave": "A00001019",
+      "price": 253
+    },
+    {
+      "description": "BROMAZEPAM",
+      "existence": 9,
+      "clave": "A00001112",
+      "price": 297
+    },
+    {
+      "description": "BROMURO DE IPRATROPIO ",
+      "existence": 6,
+      "clave": "A00001113",
+      "price": 281
+    },
+    {
+      "description": "CAFEÍNA / IBUPROFENO",
+      "existence": 23,
+      "clave": "A00001116",
+      "price": 287
+    },
+    {
+      "description": "CAFEÍNA / PARACETAMOL",
+      "existence": 26,
+      "clave": "A00001117",
+      "price": 272
+    },
+    {
+      "description": "CALCIPOTRIOL",
+      "existence": 29,
+      "clave": "A00001118",
+      "price": 240
+    },
+    {
+      "description": "CAPTOPRIL",
+      "existence": 35,
+      "clave": "A00001119",
+      "price": 245
+    },
+    {
+      "description": "CARBAMAZEPINA",
+      "existence": 16,
+      "clave": "A00001120",
+      "price": 306
+    },
+    {
+      "description": "DESFLURANO",
+      "existence": 40,
+      "clave": "A00001127",
+      "price": 309
+    },
+    {
+      "description": "DEXLANSOPRAZOL",
+      "existence": 7,
+      "clave": "A00001128",
+      "price": 283
+    },
+    {
+      "description": "DIACEREINA",
+      "existence": 28,
+      "clave": "A00001129",
+      "price": 232
+    },
+    {
+      "description": "DICLOFENACO",
+      "existence": 24,
+      "clave": "A00001130",
+      "price": 244
+    },
+    {
+      "description": "DIMENHIDRINATO",
+      "existence": 30,
+      "clave": "A00001131",
+      "price": 246
+    },
+    {
+      "description": "DOXOFILINA",
+      "existence": 34,
+      "clave": "A00001132",
+      "price": 262
+    },
+    {
+      "description": "EBASTINA",
+      "existence": 17,
+      "clave": "A00001133",
+      "price": 243
+    },
+    {
+      "description": "EMTRICITABINA",
+      "existence": 41,
+      "clave": "A00001134",
+      "price": 267
+    },
+    {
+      "description": "ENFUVIRTIDA",
+      "existence": 11,
+      "clave": "A00001135",
+      "price": 311
+    },
+    {
+      "description": "EPLERENONA",
+      "existence": 1,
+      "clave": "A00001136",
+      "price": 249
+    },
+    {
+      "description": "ESOMEPRAZOL",
+      "existence": 38,
+      "clave": "A00001137",
+      "price": 254
+    },
+    {
+      "description": "ESTAZOLAM",
+      "existence": 2,
+      "clave": "A00001138",
+      "price": 278
+    },
+    {
+      "description": "ESTRIOL",
+      "existence": 21,
+      "clave": "A00001139",
+      "price": 247
+    },
+    {
+      "description": "ETAMSILATO",
+      "existence": 10,
+      "clave": "A00001140",
+      "price": 236
+    },
+    {
+      "description": "FENILEFRINA",
+      "existence": 2,
+      "clave": "A00001143",
+      "price": 269
+    },
+    {
+      "description": "FENITOÍNA",
+      "existence": 20,
+      "clave": "A00001144",
+      "price": 235
+    },
+    {
+      "description": "FENOFIBRATO",
+      "existence": 35,
+      "clave": "A00001145",
+      "price": 229
+    },
+    {
+      "description": "FINASTERIDA",
+      "existence": 28,
+      "clave": "A00001146",
+      "price": 294
+    },
+    {
+      "description": "FLUCONAZOL",
+      "existence": 1,
+      "clave": "A00001147",
+      "price": 257
+    },
+    {
+      "description": "FLUOCINONIDA",
+      "existence": 17,
+      "clave": "A00001148",
+      "price": 248
+    },
+    {
+      "description": "FLUTRIMAZOL",
+      "existence": 22,
+      "clave": "A00001149",
+      "price": 296
+    },
+    {
+      "description": "GABAPENTINA",
+      "existence": 45,
+      "clave": "A00001150",
+      "price": 230
+    },
+    {
+      "description": "GLIMEPIRIDA",
+      "existence": 27,
+      "clave": "A00001151",
+      "price": 299
+    },
+    {
+      "description": "HIDROCORTISONA",
+      "existence": 14,
+      "clave": "A00001154",
+      "price": 310
+    },
+    {
+      "description": "HIDROXICARBAMIDA",
+      "existence": 12,
+      "clave": "A00001155",
+      "price": 288
+    },
+    {
+      "description": "IBUPROFENO",
+      "existence": 32,
+      "clave": "A00001156",
+      "price": 260
+    },
+    {
+      "description": "LIDOCAINA / PRILOCAINA ",
+      "existence": 49,
+      "clave": "A00001163",
+      "price": 275
+    },
+    {
+      "description": "LINEZOLID",
+      "existence": 25,
+      "clave": "A00001164",
+      "price": 285
+    },
+    {
+      "description": "LORATADINA",
+      "existence": 33,
+      "clave": "A00001165",
+      "price": 304
+    },
+    {
+      "description": "NAPROXENO sódico",
+      "existence": 20,
+      "clave": "A00001168",
+      "price": 284
+    },
+    {
+      "description": "NAPROXENO",
+      "existence": 38,
+      "clave": "A00001169",
+      "price": 280
+    },
+    {
+      "description": "NIFURATEL",
+      "existence": 37,
+      "clave": "A00001170",
+      "price": 238
+    },
+    {
+      "description": "NIMESULIDA",
+      "existence": 11,
+      "clave": "A00001171",
+      "price": 302
+    },
+    {
+      "description": "PARACETAMOL",
+      "existence": 18,
+      "clave": "A00001175",
+      "price": 282
+    },
+    {
+      "description": "SALBUTAMOL",
+      "existence": 8,
+      "clave": "A00001179",
+      "price": 264
+    },
+    {
+      "description": "TROXERUTINA",
+      "existence": 31,
+      "clave": "A00001184",
+      "price": 295
+    },
+    {
+      "description": "ZOFENOPRIL",
+      "existence": 15,
+      "clave": "A00001188",
+      "price": 228
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 1,
+      "folio": 1,
+      "product": [
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "BEZAFIBRATO",
+          "clave": "A00001017",
+          "quantity": 1,
+          "price": 286
+        }
+      ],
+      "total": 538,
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "folio": 2,
+      "product": [
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "ACECLOFENACO",
+          "clave": "A00001011",
+          "quantity": 2,
+          "price": 233
+        }
+      ],
+      "total": 718,
+      "comment": "a"
+    },
+    {
+      "id": 3,
+      "folio": 3,
+      "product": [
+        {
+          "description": "ACECLOFENACO",
+          "clave": "A00001011",
+          "quantity": 1,
+          "price": 233
+        },
+        {
+          "description": "ACEMETACINAACENOCUMAROL",
+          "clave": "A00001012",
+          "quantity": 1,
+          "price": 225
+        }
+      ],
+      "total": 458,
+      "comment": ""
+    }
+  ]
+}
