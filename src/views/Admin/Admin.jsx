@@ -10,9 +10,15 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import dashboardStyle from "assets/jss/material-dashboard-react/views/dashboardStyle.jsx";
-
+import CardHeader from "components/Card/CardHeader.jsx";
 
 const API_URL = 'http://localhost:3004';
+
+const styles={
+    title:{
+        margin:0,
+    }
+}
 
 class Admin extends React.Component {
   state = {
@@ -40,13 +46,18 @@ class Admin extends React.Component {
     return (
       <div>
         <GridContainer>
-        <GridItem xs={12} sm={12} md={12}>
             {this.state.results.map(function(row, index){
-                return <Card key={ index }>
+            return <GridItem xs={12} sm={6} md={6} key={ index }>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 style={styles.title}>
+                            Folio: 0000{row.folio}
+                        </h4>
+                    </CardHeader>
                     <CardBody >
-                        <p>Folio:{row.folio}</p>
                         <p>Comentario:{row.comment}</p>
-                        <p>Productos:</p>
+                        <p>Total:{row.total}</p>
+                        <p>Productos:   </p>
                             <ul>
                             {
                                 row.product.map(function(r,i){
@@ -61,9 +72,8 @@ class Admin extends React.Component {
                             </ul>
                     </CardBody>
                 </Card>
+            </GridItem>
             })}
-          
-          </GridItem>
         </GridContainer>
       </div>
     );

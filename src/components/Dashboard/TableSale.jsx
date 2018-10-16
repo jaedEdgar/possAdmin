@@ -52,10 +52,10 @@ let totalItem = (cant,precio) => {
 
 const TableFilterResult = (props) =>{
     const { classes } = props;
-    
+    console.log(props.sales);
     return (
     <div>
-    
+      
       <div style={{height: 'auto', overflow: 'auto'}}>
         <div style={{ width:'100%'}}>
           <Table className={classes.table}>
@@ -75,7 +75,7 @@ const TableFilterResult = (props) =>{
           <Table className={classes.table}>
               <TableBody style={{width:'100%'}}>
               {props.sales && props.sales.length > 0 &&
-              props.sales.map((row,index) => {
+                props.sales.map((row,index) => {
                   return (
                   <TableRow key={index}
                       hover

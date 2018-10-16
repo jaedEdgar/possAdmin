@@ -60,11 +60,11 @@ const Sidebar = ({ ...props }) => {
   var brand = (
     <div className={classes.logo}>
         <div className={classes.logoImage}>
-          <img src={logo} alt="logo" className={classes.img} style={{height: 28,width:'auto', top: 12}}/>
+          <img src={logo} alt="logo" className={classes.img}/>
         </div>
-        <span style={{color:"#fff",fontSize:18}} >
+        {/* <span style={{color:"#fff",fontSize:18}} >
           {logoText}
-        </span>
+        </span> */}
     </div>
   );
   return (

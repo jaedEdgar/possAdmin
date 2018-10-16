@@ -17,7 +17,7 @@ import dashboardRoutes from "routes/dashboard.jsx";
 import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboardStyle.jsx";
 import Search from "@material-ui/icons/Search";
 import image from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/logo.png";
+import logo from "assets/img/logo_farmacos.png";
 
 const switchRoutes = (
   <Switch>

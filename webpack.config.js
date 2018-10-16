@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OfflinePlugin  = require('offline-plugin');
 
 const config = {
   stats: {
@@ -141,15 +142,6 @@ const config = {
 
   plugins: [
     new webpack.NamedModulesPlugin(),
-   /*  new webpack.LoaderOptionsPlugin({
-      test: /\.jsx?$/,
-      options: {
-        eslint: {
-          configFile: resolve(__dirname, '.eslintrc'),
-          cache: false,
-        }
-      },
-    }), */
     new webpack.optimize.ModuleConcatenationPlugin(),
     new ExtractTextPlugin({ filename: './styles/style.css', disable: false, allChunks: true }),
     new CopyWebpackPlugin([{ from: 'vendors', to: 'vendors' }]),

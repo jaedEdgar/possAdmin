@@ -43,61 +43,62 @@ class Dashboard extends React.Component {
     fakeRow:[0,1,2,3,4],
     total:'0'
   };
-  // Obtenemos la información y la guardamos en el *results y *stock
-  getData(){
-    axios.get(API_URL+'/stock')
-    .then((res) => { 
-        this.setState({
-          results:  res.data,
-          stock: res.data
-        })
-        localStorage.setItem('stock', JSON.stringify(res.data));
+  
+  setInitialState(){
+    console.log("me acabas de setear")
+    let folio = this.state.folio;
+    this.setState(this.initialState);
+    this.setState({sale:[]});
+    console.log(this.state.sale);
+    this.setState({
+      folio:(folio+1)
+    });
+  };
+ 
+  getData = {
+    stock: () => {
+      axios.get(API_URL+'/stock')
+      .then((res) => { 
+        this.setDataStates(res.data);
       })
       .catch((error)=>{
         if("stock" in localStorage){
-          var stock = JSON.parse(localStorage.getItem('stock'));
-          this.setState({
-            results:  stock,
-            stock: stock
-          })
+          let data = JSON.parse(localStorage.getItem('stock'));
+          this.setDataStates(data);
         }else{
           alert("no pudimos recuperar información")
         }
       });
-  };
-  
-  getDataPrescriptions(){
-    axios.get(API_URL+'/prescriptions')
-    .then((res) => { 
-        console.log(res);
-        this.setState({
-          folio:(res.data[res.data.length-1].folio+1),
+  },
+ 
+  prescriptions: () =>{
+      axios.get(API_URL+'/prescriptions')
+      .then((res) => { 
+          console.log(res);
+          this.setState({
+            folio:(res.data[res.data.length-1].folio+1),
+          })
+          localStorage.setItem('prescriptions', JSON.stringify(res.data));
         })
-        localStorage.setItem('prescriptions', JSON.stringify(res.data));
-      })
-      .catch((error)=>{
-        if("prescriptions" in localStorage){
-          var prescriptions = JSON.parse(localStorage.getItem('prescriptions'));
-          this.setState({
-            folio:(prescriptions[prescriptions.length-1].folio+1),
-          })
-        }else{
-          alert("no pudimos recuperar información")
-        }
-      });
-      ;
+        .catch((error)=>{
+        });
+    }
   };
-
-  savePrescription=(data)=>{
-    console.log(data);
+  setDataStates = (data) => {
+    this.setState({
+      results:  data,
+      stock: data
+    })
+    localStorage.setItem('stock', JSON.stringify(data));
+  }
+  savePrescription = (data) => {
     axios.post(API_URL+'/prescriptions',data)
     .then((response) => {
-      console.log(response);
-      this.setState(this.initialState);
-      this.setState({folio:this.state.folio+1});
       alert("Guardado correctamente");
+      console.log(response);
     })
     .catch((error) => {
+     
       console.log(error);
     });
   };
@@ -112,7 +113,7 @@ class Dashboard extends React.Component {
     });
   };
 
-  handleSearchChange=(query) =>{
+  handleSearchChange=(query) => {
     this.setState({
       query: query
     }, () => {
@@ -131,10 +132,11 @@ class Dashboard extends React.Component {
     this.setState({ value: index });
   };
    
-  componentDidMount() {                                                       
-     this.getData();       
-     this.getDataPrescriptions()                                                           
-  }                                                                           
+  componentDidMount() {
+     this.getData.stock();       
+     this.getData.prescriptions();       
+  }           
+
   getElementRow = (row) => {
     let sale = this.state.sale;
     let fakeRow = [0,1,2,3,4];
@@ -144,10 +146,8 @@ class Dashboard extends React.Component {
     }else{
       fakeRow = [];
     }
-    
     row.quantity=1;
     sale.push(row);
-
     this.setState({
       showResults:false,
       sale:sale,
@@ -182,8 +182,8 @@ class Dashboard extends React.Component {
     this.setState({
       total:total
     })
-  };                                                       
-  
+  };
+
   complete = () =>{
     let products = this.state.sale.map(function(item){
       return {
@@ -202,34 +202,47 @@ class Dashboard extends React.Component {
     };
     if(navigator.onLine){
       this.savePrescription(data);
+      this.setInitialState();
     }else{
       alert("problemas para conectarse");
-      localStorage.setItem('prescription', JSON.stringify(data));
+      this.saveInLocalStorage(data);
       this.saveBefore();
     }
     
   };
+
+  saveInLocalStorage = (data) =>{
+    if("prescription" in localStorage){
+      let prescriptions = JSON.parse(localStorage.getItem('prescription'));
+      prescriptions.push(data);
+      localStorage.setItem('prescription', JSON.stringify(prescriptions));
+    }else{
+      localStorage.setItem('prescription', JSON.stringify([data]));
+    }   
+    this.setInitialState();
+  }
+
   saveBefore= () =>{
-    console.log("entraste");
     if("prescription" in localStorage){
       if(navigator.onLine){
         let prescription = JSON.parse(localStorage.getItem('prescription'));
-        this.savePrescription(prescription);
-        localStorage.clear();
+        console.log(prescription);
+        prescription.forEach(element => {
+          this.savePrescription(element);
+        });
+        //localStorage.clear();
       }else{
-        console.log("entraste else");
         setTimeout(this.saveBefore,100);
       }
     } 
-
-  }
+  };
 
   render() {
     return (
       <div>
         <GridContainer>
         <GridItem xs={12} sm={12} md={12}>
-            <Card>
+            <Card style={{marginTop:0}}>
               <CardBody >
                 <GridContainer>
                   <GridItem xs={12} sm={8} md={8}>
@@ -243,7 +256,6 @@ class Dashboard extends React.Component {
                 <GridItem xs={12} sm={12} md={12}>
                   { this.state.showResults &&
                       <TableFilterResult results={this.state.results} getElementRow={this.getElementRow}/>
-                  
                   }
                 </GridItem>
                 </GridContainer>

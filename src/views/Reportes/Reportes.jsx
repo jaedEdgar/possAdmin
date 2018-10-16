@@ -58,9 +58,9 @@ function Reportes(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+            <h4 className={classes.cardTitleWhite}>Ejemplo</h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              Lorem ipsum dolor sit amet.  
             </p>
           </CardHeader>
           <CardBody>

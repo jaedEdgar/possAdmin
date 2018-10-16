@@ -351,39 +351,331 @@
       "folio": 2,
       "product": [
         {
-          "description": "ACARBOSA ",
-          "clave": "A00001010",
+          "description": "EBASTINA",
+          "clave": "A00001133",
           "quantity": 1,
-          "price": 252
+          "price": 243
         },
         {
-          "description": "ACECLOFENACO",
-          "clave": "A00001011",
-          "quantity": 2,
-          "price": 233
+          "description": "ACICLOVIR",
+          "clave": "A00001013",
+          "quantity": 1,
+          "price": 289
         }
       ],
-      "total": 718,
-      "comment": "a"
+      "total": 532,
+      "comment": ""
     },
     {
       "id": 3,
       "folio": 3,
       "product": [
         {
+          "description": "ANASTROZOL",
+          "clave": "A00001016",
+          "quantity": 1,
+          "price": 227
+        },
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "ANASTROZOL",
+          "clave": "A00001016",
+          "quantity": 1,
+          "price": 227
+        }
+      ],
+      "total": 706,
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "folio": 4,
+      "product": [
+        {
+          "description": "ANASTROZOL",
+          "clave": "A00001016",
+          "quantity": 1,
+          "price": 227
+        },
+        {
+          "description": "BICALUTAMIDA",
+          "clave": "A00001018",
+          "quantity": 1,
+          "price": 279
+        }
+      ],
+      "total": 506,
+      "comment": ""
+    },
+    {
+      "id": 5,
+      "folio": 5,
+      "product": [
+        {
+          "description": "ANASTROZOL",
+          "clave": "A00001016",
+          "quantity": 1,
+          "price": 227
+        }
+      ],
+      "total": 227,
+      "comment": ""
+    },
+    {
+      "id": 6,
+      "folio": 6,
+      "product": [
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        }
+      ],
+      "total": 504,
+      "comment": ""
+    },
+    {
+      "id": 7,
+      "folio": 7,
+      "product": [
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "FINASTERIDA",
+          "clave": "A00001146",
+          "quantity": 1,
+          "price": 294
+        }
+      ],
+      "total": 546,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "folio": 8,
+      "product": [
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        },
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        },
+        {
+          "description": "ACECLOFENACO",
+          "clave": "A00001011",
+          "quantity": 1,
+          "price": 233
+        }
+      ],
+      "total": 719,
+      "comment": ""
+    },
+    {
+      "id": 9,
+      "folio": 9,
+      "product": [
+        {
+          "description": "BICALUTAMIDA",
+          "clave": "A00001018",
+          "quantity": 1,
+          "price": 279
+        },
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        },
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        }
+      ],
+      "total": 774,
+      "comment": ""
+    },
+    {
+      "id": 10,
+      "folio": 10,
+      "product": [
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "ACARBOSA ",
+          "clave": "A00001010",
+          "quantity": 1,
+          "price": 252
+        },
+        {
+          "description": "ACICLOVIR",
+          "clave": "A00001013",
+          "quantity": 1,
+          "price": 289
+        }
+      ],
+      "total": 793,
+      "comment": ""
+    },
+    {
+      "id": 11,
+      "folio": 11,
+      "product": [
+        {
+          "description": "ACEMETACINAACENOCUMAROL",
+          "clave": "A00001012",
+          "quantity": 1,
+          "price": 225
+        },
+        {
+          "description": "FINASTERIDA",
+          "clave": "A00001146",
+          "quantity": 1,
+          "price": 294
+        }
+      ],
+      "total": 519,
+      "comment": ""
+    },
+    {
+      "id": 12,
+      "folio": 12,
+      "product": [
+        {
+          "description": "ACEMETACINAACENOCUMAROL",
+          "clave": "A00001012",
+          "quantity": 1,
+          "price": 225
+        },
+        {
+          "description": "FINASTERIDA",
+          "clave": "A00001146",
+          "quantity": 1,
+          "price": 294
+        }
+      ],
+      "total": "0",
+      "comment": ""
+    },
+    {
+      "id": 13,
+      "folio": 13,
+      "product": [
+        {
+          "description": "ACEMETACINAACENOCUMAROL",
+          "clave": "A00001012",
+          "quantity": 1,
+          "price": 225
+        },
+        {
+          "description": "FINASTERIDA",
+          "clave": "A00001146",
+          "quantity": 1,
+          "price": 294
+        },
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        }
+      ],
+      "total": 762,
+      "comment": ""
+    },
+    {
+      "id": 14,
+      "folio": 14,
+      "product": [
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        },
+        {
           "description": "ACECLOFENACO",
           "clave": "A00001011",
           "quantity": 1,
           "price": 233
         },
         {
-          "description": "ACEMETACINAACENOCUMAROL",
-          "clave": "A00001012",
+          "description": "CAFEÍNA / IBUPROFENO",
+          "clave": "A00001116",
           "quantity": 1,
-          "price": 225
+          "price": 287
         }
       ],
-      "total": 458,
+      "total": 763,
+      "comment": ""
+    },
+    {
+      "id": 15,
+      "folio": 15,
+      "product": [
+        {
+          "description": "FINASTERIDA",
+          "clave": "A00001146",
+          "quantity": 1,
+          "price": 294
+        }
+      ],
+      "total": 294,
+      "comment": ""
+    },
+    {
+      "id": 16,
+      "folio": 16,
+      "product": [
+        {
+          "description": "EBASTINA",
+          "clave": "A00001133",
+          "quantity": 1,
+          "price": 243
+        }
+      ],
+      "total": 243,
+      "comment": ""
+    },
+    {
+      "id": 17,
+      "folio": 17,
+      "product": [
+        {
+          "description": "BICALUTAMIDA",
+          "clave": "A00001018",
+          "quantity": 1,
+          "price": 279
+        }
+      ],
+      "total": 279,
       "comment": ""
     }
   ]
